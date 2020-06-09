@@ -1,0 +1,52 @@
+Print the following pattern for the given number of rows.
+
+Pattern for N = 4
+
+****
+***
+**
+*
+
+
+Sample Input :
+
+
+5
+
+
+Sample Output :
+
+
+* * * * *
+* * * *  
+* * *
+* *
+*
+
+
+
+JAVA CODE:-
+
+
+
+public class Solution {
+
+	public static void print(int n) {
+        /* Your class should be named Solution
+		 * Don't write main().
+		 * Don't read input, it is passed as function argument.
+		 * Return output.
+	 	 * Taking input is handled automatically.
+		 */
+        
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=i;j<=n;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+        
+  }
+}
